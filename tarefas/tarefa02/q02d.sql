@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION ObterDiasAtrasoProjeto(codigo_ativ INT)
+CREATE OR REPLACE FUNCTION ObterDiasAtrasoAtividade(codigo_ativ INT)
 RETURNS INT
 LANGUAGE plpgsql
 AS
