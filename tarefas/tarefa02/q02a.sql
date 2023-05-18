@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION ObterIdadeFuncionario(codigo_func INT)
+CREATE OR REPLACE FUNCTION ObterIdadeFuncionario(codigoFunc INT)
 RETURNS INT
 LANGUAGE plpgsql
 AS
@@ -9,7 +9,7 @@ BEGIN
 	SELECT DATE_PART('YEAR', AGE(datanasc))
 	INTO idade
 	FROM funcionario
-	WHERE codigo = codigo_func;
+	WHERE codigo = codigoFunc;
 	
 	RETURN idade;
 END;
